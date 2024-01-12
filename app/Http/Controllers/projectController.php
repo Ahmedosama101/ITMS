@@ -35,7 +35,7 @@ class projectController extends Controller
             $projects = Project::where('owner', $user->name)->get(); // select projects where the user is the owner
         }
 
-        return view('project.index', compact('projects'));
+        return view('project.index', compact('projects', 'user'));
     }
      
 

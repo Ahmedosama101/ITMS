@@ -1,8 +1,22 @@
 @extends('layouts.app')
- 
+ <?php
+            if($user['role'] == 1 ) { // if the user is an admin or a manager
+                $rolename = 'admin';
+            } elseif($user['role'] == 2){
+                $rolename = 'manager';
+            }
+            else if($user['role'] == 3) { // if the user is a lead developer
+                $rolename = 'leaddeveloper';
+            } else if($user['role'] == 4) { // if the user is a developer
+                $rolename = 'developer';
+            } else if($user['role'] == 5) { // if the user is an owner
+                $rolename = 'owner';
+            }
+        ?>
 @section('body')
     <div class="d-flex align-items-center justify-content-between">
-        <h1 class="mb-0">Project Management Dashboard</h1>
+        
+        <h1 class="mb-0">Project Management Dashboard for the {{ $rolename }} {{ $user['name'] }}</h1>
 <!--        <a href="/projectpdf" class="btn btn-succsess">Export PDF</a>  -->
     </div>
     <br>
