@@ -31,11 +31,11 @@
                     <td>{{ $project['name'] }}</td>
                     <td>{{ $project['owner'] }}</td>
                     <td>{{ $project['type'] }}</td>
-                    <td>{{ $project['dev_methodology'] }}</td>
-                    <td>{{ $project['dev_platform'] }}</td>
+                    <td style="width:100px">{{ $project['dev_methodology'] }}</td>
+                    <td style="width:100px">{{ $project['dev_platform'] }}</td>
                     <td>{{ $project['deployment_type'] }}</td>
-                    <td>{{ $project['startdate'] }}</td>
-                    <td>{{ $project['enddate'] }}</td>
+                    <td style="width:110px">{{ $project['startdate'] }}</td>
+                    <td style="width:110px">{{ $project['enddate'] }}</td>
                     <td>{{ $project['estimatedduration'] }}</td>
                     <td style="background-color: 
                 @if($project['status'] == 'Ahead of Target') MediumAquaMarine
@@ -46,7 +46,7 @@
                 @endif
             ">
                 {{ $project['status'] }}
-            </td>                    <td>
+            </td>                    <td style="width:150px">
                         @if($project->leadDeveloper)
                             {{ optional($project->leadDeveloper)->name }}
                         @else

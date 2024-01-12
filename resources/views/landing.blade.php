@@ -182,7 +182,7 @@
                     <p class="m-0 py-3 text-muted">"As a Junior Developer, I'm excited to contribute my skills and learn from the experienced members of the ITMS team. My role involves coding, testing, and actively participating in the development of software solutions for UNITEN."</p>
                     <div class="content-divider m-auto"></div>
                     <h6 class="card-title pt-3">Raj Patel</h6>
-                    <h6 class="customer-designation text-muted m-0">Junior Developer/h6>
+                    <h6 class="customer-designation text-muted m-0">Junior Developer</h6>
                   </div>
                 </div>
               </div>

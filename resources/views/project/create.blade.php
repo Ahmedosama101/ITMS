@@ -61,7 +61,7 @@
             <label for="deployment_type">Project Deployment Type:</label>
                 <div class="custom-dropdown">
                     <select name="deployment_type" id="deployment_type" class="inputsize form-control" required>
-                        <option value="" disabled selected>Select Project Deployment Type</option> 
+                        <option value="" disabled selected>Select Project Deployment Type </option> 
                         <option value="Cloud">Cloud</option>
                         <option value="On-Premises">On-Premises</option>
                     </select>

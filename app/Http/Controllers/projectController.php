@@ -170,6 +170,9 @@ public function reportpage($project_id)
         $project->name = $request->name;
         $project->owner = $request->owner;
         $project->type = $request->type;
+        $project->dev_methodology = $request->dev_methodology;
+        $project->dev_platform = $request->dev_platform;
+        $project->deployment_type = $request->deployment_type;
         $project->startdate = $request->startdate;
         $project->enddate = $request->enddate;
         $project->estimatedduration = $request->estimatedduration;
